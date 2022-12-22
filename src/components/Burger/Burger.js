@@ -2,7 +2,7 @@ import React from 'react';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 import classes from './Burger.css';
 
-const Burger = ({ ingredients = {} }) => {
+const Burger = ({ ingredients }) => {
   let transformedIngredients = Object.keys(ingredients)
     .map((igKey) => {
       return [...Array(ingredients[igKey])].map((_, idx) => {
